@@ -1,0 +1,342 @@
+:root {
+  --theme: blanchedalmond;
+  --theme2: rgb(189, 172, 148);
+  --theme3: rgb(59, 54, 47);
+  --theme4: rgb(24, 23, 20);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(45deg, black, #353434);
+  color: var(--theme);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.name h1 {
+  margin: 6.4em 0;
+  font-size: xxx-large;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* Internet Explorer */
+}
+
+.name h1 .m, .name h1 .a, .name h1 .r, .name h1 .z, .name h1 .u, .name h1 .k, .name h1 .M, .name h1 .A, .name h1 .S, .name h1 .H, .name h1 .R, .name h1 .AA, .name h1 .F, .name h1 .E {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.name h1 .m:hover, .name h1 .a:hover, .name h1 .r:hover, .name h1 .z:hover, .name h1 .u:hover, .name h1 .k:hover, .name h1 .M:hover,
+.name h1 .A:hover, .name h1 .S:hover, .name h1 .H:hover, .name h1 .R:hover, .name h1 .AA:hover, .name h1 .F:hover, .name h1 .E:hover {
+  cursor: default;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-size: 120%;
+  color: var(--theme3);
+}
+
+.name h1 .xyzxx {
+  font-size: 120%;
+  visibility: hidden;
+}
+
+.about #xyz {
+  display: block;
+}
+
+.about #xyz .boot {
+  display: block;
+}
+
+.about #xyz .boot img {
+  margin: 2em;
+  margin-bottom: 0;
+  width: 15em;
+  height: auto;
+  border-radius: 7.5em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.about #xyz .boot img:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.about #xyz .boot p {
+  margin: 2em;
+}
+
+.about #xyz nav a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about #xyz nav a img {
+  margin: 1em;
+  width: 2em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.about #xyz nav a img:hover {
+  width: 2.3em;
+  margin-bottom: .7em;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.port-selector {
+  margin: 6em 2em 5em;
+}
+
+.port-selector .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.port-selector .buttons button {
+  display: inline-block;
+  border-radius: 1em;
+  background-color: var(--theme);
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bolder;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.port-selector .buttons button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.port-selector .buttons button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.port-selector .buttons button:hover span {
+  padding-right: 25px;
+  color: var(--theme);
+}
+
+.port-selector .buttons button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.skills .stuff {
+  display: block;
+}
+
+.skills .stuff h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em 1em 0;
+}
+
+.skills .stuff p {
+  padding-top: 1em;
+}
+
+.skills .stuff .edu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.skills .stuff .edu .st, .skills .stuff .edu .nd {
+  font-size: small;
+  color: var(--theme2);
+}
+
+.skills .stuff div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.skills .stuff div span {
+  margin: 1em .5em 0;
+}
+
+.projects h2, .work h2 {
+  margin-top: 3em;
+}
+
+.projects h3, .work h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: x-large;
+}
+
+.projects .ttl span, .work .ttl span {
+  margin-left: 1em;
+  font-size: small;
+}
+
+.projects .stuff div, .work .stuff div {
+  margin: 1em;
+  padding: .5em;
+  border-radius: .5em;
+  background-color: var(--theme3);
+}
+
+.projects .stuff p, .work .stuff p {
+  margin-bottom: 2.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.projects .stuff li, .work .stuff li {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.projects .stuff li span, .work .stuff li span {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: large;
+  color: var(--theme4);
+}
+
+.projects #nyi, .work #nyi {
+  color: var(--theme2);
+  font-size: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.projects #ps, .work #ps {
+  font-weight: bolder;
+  color: var(--theme4);
+}
+
+.work .stuff div {
+  background-color: var(--theme4);
+}
+
+.work .stuff li {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.work .stuff li span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: medium;
+  color: var(--theme);
+}
+
+.keep-tog {
+  white-space: nowrap;
+}
+
+.photos h3 {
+  margin: 1.5em;
+  font-size: x-large;
+}
+
+.photos #ps, .photos #passion {
+  margin: 1em 1em;
+  max-width: 50em;
+}
+
+.photos #ps span, .photos #passion span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.photos #ps a, .photos #passion a {
+  font-size: large;
+  color: var(--theme);
+}
+
+.photos #ps a:hover, .photos #passion a:hover {
+  color: var(--theme3);
+}
+
+.photos .pics input {
+  width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 1em;
+  margin-bottom: 0;
+}
+
+.photos .pics p {
+  margin: 0 1.5em 1em;
+  padding: 2em .5em 1.5em;
+  background-color: var(--theme3);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+
+.photos .pics a {
+  color: var(--theme);
+}
+
+.photos .pics a:hover {
+  color: var(--theme4);
+}
+
+.volun .desc p {
+  margin: 2em;
+}
+
+.volun .desc h3 {
+  margin: 1.5em;
+  font-size: x-large;
+}
+
+.oldoldold {
+  display: none;
+}
+
+footer {
+  padding: 1em .5em 1.5em;
+  background-color: var(--theme4);
+}
+
+@media only screen and (min-width: 835px) {
+  .container {
+    width: 835px;
+    margin: 0 auto;
+  }
+  .code .skills .stuff {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
