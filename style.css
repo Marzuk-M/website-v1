@@ -104,7 +104,7 @@ body {
 .port-selector .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -338,5 +338,11 @@ footer {
     margin-left: 2em;
     margin-right: 2em;
   }
+}
+
+@media only screen and (min-width: 500px) {
+    .port-selector .buttons{
+      display: flex;
+    }
 }
 /*# sourceMappingURL=style.css.map */
